@@ -14,10 +14,10 @@ provider "aws" {
 
 module "s3_dummy" {
   source      = "./modules/s3"
-  bucket_name = "silver-guide-test"
+  bucket_name = "bronze-guide-unique-test"
   environment = var.environment
   tags = {
-    Project = "SilverGuide"
+    Project = "BronzeGuide"
     Owner   = "AAJaisiv"
     Env     = var.environment
   }
